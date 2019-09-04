@@ -1,7 +1,10 @@
 const apiManager = {
-    getAllEntries: () => {
-      return fetch("http://localhost:3000/entries")
-      .then(entries => entries.json())
-      .then(parsedEntry => parsedEntry.foreach(singleEntry)
-      )
-    }
+  getAllEntries:(string) => { 
+      return fetch(`http://localhost:3000/entries`)
+      .then(response => response.json())
+      .then(paresedEntry=>{
+          paresedEntry.forEach(singleEntry =>{
+          document.querySelector("#dom").innerHTML += entryList(singleEntry)
+        })
+})
+}}
