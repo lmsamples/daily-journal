@@ -7,18 +7,29 @@ submit.addEventListener("click", function(){
     let entryContent = document.querySelector("#entry-content").value
     let entryMood = document.querySelector("#entry-mood").value
 
-    var singleEntry = {
+    var singleEntryPost = {
     concept: entryConcept,
     date: entryDate,
     content: entryContent,
     mood: entryMood
     }
-    console.log(singleEntry)
+    console.log(singleEntryPost)
 
-    document.querySelector("#dom").innerHTML = ""
-    apiManager.getAllEntries(singleEntry)
+    fetch("http://localhost:3000/entries", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(singleEntryPost)
+      }).then(() => {
+   
+        fetch("http://localhost:3000/entries")
+        .then(response => response.json())
+        .then(parsedEntry => {
 
-})
-
+            printStudentsToDOM(parsedEntry)
+        })
+      });
+    });
 
 
