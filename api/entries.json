@@ -1,25 +1,18 @@
 {
   "entries": [
     {
-      "id": 1,
-      "concept": "Defining Variables",
-      "date": "8-12-2019",
-      "content": "javascript hurts my head",
-      "mood": "bored"
-    },
-    {
-      "id": 2,
-      "concept": "Looping Arrays",
-      "date": "8-13-2019",
-      "content": "I'm gonna eat at schlotsky's",
-      "mood": "tired"
-    },
-    {
       "concept": "Saving into Json Server",
       "date": "2019-09-04",
       "content": "I updated my daily journal to save entries in my json server.",
       "mood": "happy",
       "id": 3
+    },
+    {
+      "concept": "Deleting from json",
+      "date": "2019-09-05",
+      "content": "Today I updated my javascript to allow me to delete a journal entry, i also added in some css",
+      "mood": "hungry",
+      "id": 4
     }
   ]
 }

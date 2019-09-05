@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport content=width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
@@ -11,7 +12,7 @@
 
     <section class="form-area">
       <form id="forms">
-        <label>Concepts Covered:</label>
+        <center><label>Concepts Covered:</label>
         <input type="text" id="entry-concept" ><br><br>
         <label>Date:</label>
         <input type="date" id="entry-date" ><br><br>
@@ -19,14 +20,13 @@
         <textarea id="entry-content"></textarea><br><br>
         <label>Mood:</label>
         <input type="text" id="entry-mood" ><br><br>
-        <input type="button" value="Submit" id="entry-submit">
+        <button id="entry-submit">Submit</button></center>
       </form>
     </section>
 
-    <div id="dom"></div>
+    <div id="dom"><ul id="dom-list"></ul></div>
     <script src="scripts/DOMPrinter.js"></script>
     <script src="scripts/apiManager.js"></script>
-    <script src="scripts/htmlBuilder.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
